@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Software Page</title>
+    <meta property="og:title" content="Software Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-no9b-1500h.png"
+                class="home-logo"
+              />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <div class="home-left"><div class="home-links1"></div></div>
+                <div class="home-right">
+                  <span class="home-sign-in Link"><a href="entry.html">Sign in</a></span>
+                  <div class="home-get-started">
+                    <a href="entry.html">
+                    <span class="home-text03">Get started</span></a>
+
+                  </div>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="public/pastedimage-yxbd.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="home-container02">
+                <script>
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </div>
+          <header class="home-header">
+            <h1 class="home-text04">Take Control of Your Social Media</h1>
+            <p class="home-text05">
+              "Customer satisfaction is the radiant reflection of a business's
+              commitment to not just meeting but exceeding the expectations of
+              those it serves. It's the art of turning transactions into
+              meaningful connections, and in that connection, we find the true
+              beauty of success."
+            </p>
+          </header>
+          <div class="home-get-started1">
+            <span class="home-text06"><a href="entry.html">Get started</a></span>
+          </div>
+          <div class="home-dashboard-preview"></div>
+        </section>
+        <section class="home-features">
+          <div class="home-title">
+            <span class="home-text07">
+              <span>Let's grow your social media</span>
+              <br />
+              <span>presence</span>
+            </span>
+            <span class="home-text11">
+              <span>
+                
+              </span>
+              <span>.</span>
+            </span>
+          </div>
+          <div class="home-cards">
+            <div class="home-container03">
+              <div class="card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-fii6m-200h.png"
+                  class="home-icon2"
+                />
+                <span class="home-text14">Schedule</span>
+                <span class="home-text15">
+                  It is very important for the customer to follow the time
+                  shifting paradigms of the world
+                </span>
+              </div>
+              <div class="home-publish card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-mimg-200h.png"
+                  class="home-icon3"
+                />
+                <span class="home-text16">Publish</span>
+                <span class="home-text17">
+                  It is essential for the customer for publishing their content
+                  at regular intervals.
+                </span>
+              </div>
+            </div>
+            <div class="home-container04">
+              <div class="card home-analyze">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-l6p-200h.png"
+                  class="home-icon4"
+                />
+                <span class="home-text18">Analyze</span>
+                <span class="home-text19">
+                  Analyzying helps us stay in touch with the recent trends
+                </span>
+              </div>
+              <div class="home-get-leads card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-vyi5-200h.png"
+                  class="home-icon5"
+                />
+                <span class="home-text20">Get leads</span>
+                <span class="home-text21">
+                  Providing leads is one of the things important for growth .
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-quote-container">
+          <div class="home-quote">
+            <span class="home-message">
+              "Your most unhappy customers are your greatest source of
+              learning."
+            </span>
+            <div class="home-author">
+              <span class="home-quote1">— Bill Gates</span>
+            </div>
+          </div>
+        </section>
+        <section class="home-statistics">
+          <div class="home-container05">
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>3.5M</span></span>
+              <span class="active-users-text1">
+                <span>— Active users</span>
+              </span>
+            </div>
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>50k</span></span>
+              <span class="active-users-text1"><span>— Brands</span></span>
+            </div>
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>250K</span></span>
+              <span class="active-users-text1">
+                <span>— Accounts Managed</span>
+              </span>
+            </div>
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>30M</span></span>
+              <span class="active-users-text1">
+                <span>— Active leads</span>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-banners">
+          <div class="home-banner-manage">
+            <div class="home-container06">
+              <div class="home-left1">
+                <span class="sub-title">Content Management</span>
+                <span class="home-text23 title">
+                  Manage all your platforms in just one place.
+                </span>
+                <div class="home-get-started2 template-button">
+                  <span class="home-text24"><a href="entry.html">Get started</a></span>
+                </div>
+              </div>
+              <div class="home-image-container">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-wvmq%201-1200w.png"
+                  class="home-cards-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="home-banner-advanced-analytics">
+            <div class="home-centered-container">
+              <div class="home-image-container1">
+                <img
+                  alt="pastedImage"
+                  src="public/test-1200w.png"
+                  class="home-cards-image1"
+                />
+              </div>
+              <div class="home-right1">
+                <h2 class="home-text25 title">
+                  Advanced analytics, easy to understand.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="home-banner"></div>
+        </section>
+        <section class="home-integrations">
+          <div class="home-centered-container1">
+            <div class="home-heading">
+              <span class="sub-title">Integrations</span>
+              <span class="title">
+                Integrated with the tools you know and love
+              </span>
+            </div>
+            <div class="home-pills-container">
+              <div class="home-pills">
+                <div class="home-container07">
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/pastedimage-smjb.svg"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/group%201012-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/layer1-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/group-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                </div>
+                <div class="home-container08">
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/pinterest%20logo-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/group%201014-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/group%201015-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                  <div class="you-tube-you-tube">
+                    <img
+                      alt="pastedImage"
+                      src="public/logos/group%201017-200h.png"
+                      class="you-tube-pasted-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-how-it-works">
+          <div class="home-centered-container2">
+            <div class="home-heading1">
+              <span class="home-text28">How it works</span>
+              <span class="home-text29 title">
+                Being social and getting leads has never been easier
+              </span>
+            </div>
+            <div class="home-category">
+              <div class="home-headng">
+                <span class="home-text30">
+                  <br />
+                  <span><a href="entry.html">Sign up</a></span>
+                </span>
+                <span class="home-text33">
+                </span>
+                <div class="home-get-started3 template-button">
+                  <span class="home-text34"><a href="entry.html">Get started</a></span>
+                </div>
+              </div>
+              <div class="home-container09">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-k5xi%201-1200w.png"
+                  class="home-pasted-image"
+                />
+              </div>
+            </div>
+            <div class="home-row"></div>
+          </div>
+        </section>
+        <section class="home-pricing">
+          <div class="home-centered-container3">
+            <div class="home-heading2">
+              <span class="home-text35 title">
+                Pricing for all kind of businesses
+              </span>
+              <span class="home-text36">
+                Create next-generation solutions for small business customers
+                with pricing options that accommodate everyone.
+              </span>
+              <div class="home-selection">
+                <span class="home-text38">Yearly</span>
+              </div>
+            </div>
+            <div class="home-cards1">
+              <div class="home-card">
+                <span class="home-text39">Free</span>
+                <div class="home-get-started4 template-button">
+                  <span class="home-text40"><a href="entry.html">Start for free</a></span>
+                </div>
+              </div>
+              <div class="home-card1">
+                <span class="home-text41">Pay as you go</span>
+                <span class="home-text42">Launch your brand for $49/month</span>
+                <div class="home-get-started5 template-button">
+                  <span class="home-text43">
+                    <span><a href="entry.html">Upgrade now</a></span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="home-card2">
+                <span class="home-text46">Enterprise</span>
+                <span class="home-text47">
+                  <span>Custom-built team at your service.</span>
+                  <br />
+                </span>
+                <div class="home-get-started6 template-button">
+                  <span class="home-text50">
+                    <span><a href="contact.html">Contact us</a></span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-testimonals">
+          <span class="home-text53">
+            <span>Show more</span>
+            <br />
+          </span>
+        </section>
+        <section class="home-action-bar">
+          <div class="home-action">
+            <div class="home-heading3">
+              <span class="home-text56 title">Get leads now!!!</span>
+              <div class="home-get-started7 template-button">
+                <span class="home-text57">
+                  <span><a href="entry.html">Start free</a></span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-images">
+              <img
+                alt="image"
+                src="public/e564eaa3c4fab71792794d666a281742-1200w.png"
+                class="home-image"
+              />
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-top">
+            <div class="home-left2">
+              <span class="home-text60">Subscribe to our newsletter</span>
+              <div class="home-subscription">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="home-textinput input"
+                />
+                <div class="home-subscribe">
+                  <span class="home-text61"><a href="contact.html">Subscribe</a></span>
+                </div>
+              </div>
+              <span class="home-text62">
+                By subscribing to our newsletter you agree with our Terms and
+                Conditions.
+              </span>
+              <div class="home-contact">
+                <span class="home-text63">Contact</span>
+                <a
+                  href="mailto:use@active-app.com?subject=Support"
+                  class="home-link"
+                >
+                  use@interntry.com
+                </a>
+              </div>
+            </div>
+            <div class="home-right2">
+              <div class="home-category1">
+                <span class="home-text64">Solutions</span>
+                <div class="home-links2">
+                  <span class="home-text65">Responsive Web Design</span>
+                  <span class="home-text66">Responsive Prototypesv</span>
+                  <span class="home-text67">Design to Code</span>
+                  <span class="home-text68">Static Website Builder</span>
+                  <span class="home-text69">Static Website Generator</span>
+                </div>
+              </div>
+              <div class="home-category2">
+                <span class="home-text70">Company</span>
+                <div class="home-links3">
+                  <span class="home-text71">About</span>
+                  <span class="home-text72">Team</span>
+                  <span class="home-text73">News</span>
+                  <span class="home-text74">Partners</span>
+                  <span class="home-text75">Careers</span>
+                  <span class="home-text76">Press &amp; Media</span>
+                </div>
+              </div>
+              <div class="home-category3">
+                <span class="home-text77">Solutions</span>
+                <div class="home-links4">
+                  <span class="home-text78">Twitter</span>
+                  <span class="home-text79">Linkedin</span>
+                  <span class="home-text80">Crunchbase</span>
+                  <span class="home-text81">Instagram</span>
+                  <span class="home-text82">Facebook</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
